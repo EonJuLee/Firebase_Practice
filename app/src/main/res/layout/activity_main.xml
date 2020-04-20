@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="아이디" />
+
+        <Button
+            android:id="@+id/btnchk"
+            android:layout_width="0dp"
+            android:onClick="onClick"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="중복검사" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입" />
+
+    <EditText
+        android:id="@+id/enterID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디" />
+
+    <EditText
+        android:id="@+id/enterPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인" />
+
+</LinearLayout>
